@@ -88,6 +88,26 @@
         .whatsapp-bg {
             background-color: #25D366;
         }
+
+        /* Responsive fix for very small screens */
+        @media (max-width: 420px) {
+            .contact-buttons {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+
+            .contact-buttons .link-button {
+                width: 100% !important;
+                flex: none !important;
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+            }
+
+            .contact-buttons .link-button i {
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+        }
     </style>
 </head>
 
@@ -138,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 contact-buttons">
 
                             <a href="https://wa.me/971502906495" target="_blank"
                                 class="link-button whatsapp-bg flex-1 text-sm">
@@ -163,7 +183,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 contact-buttons">
 
                             <a href="https://wa.me/989370531093" target="_blank"
                                 class="link-button whatsapp-bg flex-1 text-sm">
@@ -188,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 contact-buttons">
 
                             <a href="https://wa.me/989981459552" target="_blank"
                                 class="link-button whatsapp-bg flex-1 text-sm">
