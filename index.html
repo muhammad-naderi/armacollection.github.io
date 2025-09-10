@@ -129,7 +129,7 @@
     function isOnlineTehran() {
         const now = new Date();
         const tehranOffsetMinutes = 3.5 * 60;
-        const tehranNow = new Date(now.getTime() + ((tehranOffsetMinutes - now.getTimezoneOffset()) * 60000));
+        const tehranNow = new Date(now.getTime() + ((tehranOffsetMinutes + now.getTimezoneOffset()) * 60000));
         const day = tehranNow.getDay(); // 0=Sunday, 1=Monday, ..., 6=Saturday
         const hour = tehranNow.getHours();
         const minute = tehranNow.getMinutes();
